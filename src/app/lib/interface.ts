@@ -28,3 +28,39 @@ export interface Legislacao {
     url: string;
   }[];
 }
+
+export interface Legislacao {
+  title: string;
+  content: any;
+  linksRelacionados: {
+    titulo: string;
+    url: string;
+  }[];
+}
+
+export interface Artefato {
+  title: string;
+  content: any;
+  linksRelacionados: {
+    titulo: string;
+    url: string;
+  }[];
+}
+export interface Orientacao {
+  title: string;
+  content: any;
+  linksRelacionados: {
+    titulo: string;
+    url: string;
+  }[];
+}
+
+export interface Video {
+  id: string;
+  ano: number;
+  fotos: {
+    imagem: any;
+    descricao: string;
+    data: any;
+  }[];
+}
