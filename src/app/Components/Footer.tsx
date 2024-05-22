@@ -1,8 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { Icon } from "ionicons/dist/types/components/icon/icon";
-import { menu } from "ionicons/icons";
 
 import Image from "next/image";
 import Link from "next/link";

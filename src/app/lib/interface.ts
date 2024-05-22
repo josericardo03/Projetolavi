@@ -56,6 +56,8 @@ export interface Orientacao {
 }
 
 export interface Video {
+  imagem: any;
+  descricao: string;
   id: string;
   ano: number;
   fotos: {

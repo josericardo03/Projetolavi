@@ -1,8 +1,6 @@
 "use client";
 import { ModeToggle } from "./ModeToggle";
 import { useState } from "react";
-import { Icon } from "ionicons/dist/types/components/icon/icon";
-import { menu } from "ionicons/icons";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -24,7 +22,6 @@ export function MenuResponsivo() {
             </Link>
 
             <div className="flex items-center lg:order-2">
-              <ModeToggle></ModeToggle>
               <button
                 onClick={toggleMenu}
                 type="button"
