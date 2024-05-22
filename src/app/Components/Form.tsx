@@ -27,17 +27,63 @@ export default function Form() {
 
   return (
     <div className="App max-w-5xl mx-auto">
-      <h1>Contact Me form</h1>
-      <h2>
-        This demonstrates how to send data from a website form to Google sheet
-        in React or Vanilla JS
-      </h2>
-      <div>
-        <form className="form" ref={formRef} onSubmit={(e) => handleSubmit(e)}>
-          <input placeholder="Your Name" name="Name" type="text" />
-          <input placeholder="Your Email" name="Email" type="text" />
-          <input placeholder="Your Message" name="Message" type="text" />
-          <button type="submit">Submit</button>
+      <h1 className="text-2xl font-bold mb-4">Formulario de contato</h1>
+      <h2 className="text-lg mb-8">Formulario de contato Lavi</h2>
+      <div className="w-full max-w-md mx-auto">
+        <form
+          className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+          ref={formRef}
+          onSubmit={(e) => handleSubmit(e)}
+        >
+          <div className="mb-4">
+            <label
+              className="block text-gray-700 text-sm font-bold mb-2"
+              htmlFor="name"
+            >
+              Seu nome
+            </label>
+            <input
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              placeholder="Nome"
+              name="Name"
+              type="text"
+            />
+          </div>
+          <div className="mb-4">
+            <label
+              className="block text-gray-700 text-sm font-bold mb-2"
+              htmlFor="email"
+            >
+              Seu email
+            </label>
+            <input
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              placeholder="Email"
+              name="Email"
+              type="text"
+            />
+          </div>
+          <div className="mb-6">
+            <label
+              className="block text-gray-700 text-sm font-bold mb-2"
+              htmlFor="message"
+            >
+              Sua mensagem
+            </label>
+            <textarea
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              placeholder="Mensagem"
+              name="Message"
+            ></textarea>
+          </div>
+          <div className="flex items-center justify-between">
+            <button
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="submit"
+            >
+              Enviar
+            </button>
+          </div>
         </form>
       </div>
     </div>
